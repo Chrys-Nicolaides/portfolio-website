@@ -1,11 +1,12 @@
 import "./App.css";
+import Navbar from "./components/navbar";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">My Portfolio</header>
-      <button className="btn">About me</button>
-      <button className="bg-red-500">My work</button>
+      <Navbar />
+      <Home />
     </div>
   );
 }
