@@ -2,8 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="px-8 py-8">
-      <h3>About me</h3>
+    <div>
+      <section className="px-8 py-8">
+        <h1>About me</h1>
+        <p></p>
+      </section>
     </div>
   );
 };
