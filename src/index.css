@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  .button {
-    @apply bg-green-500 rounded px-4 py-2 text-white shadow;
+  .button-primary {
+    @apply bg-transparent rounded-md px-6 py-2.5 text-red-300 border-red-300 border-2 shadow focus:outline-none hover:bg-red-200 hover:bg-opacity-25 focus:ring-1 focus:ring-red-300;
   }
 }
 
@@ -12,9 +12,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Helvetica Neue", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

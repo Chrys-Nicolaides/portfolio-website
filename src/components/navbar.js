@@ -12,10 +12,10 @@ const Navbar = () => {
     <Router>
       <div>
         <header>
-          <nav className="w-full flex row justify-between items-center bg-gray-800 text-gray-300 shadow-lg">
-            <h2>My Portfolio</h2>
+          <nav className="w-full flex row justify-between items-center bg-gray-800 text-gray-300 shadow-xl">
+            <h2 className="px-4">My Logo</h2>
             <ul className="flex row justify-end p-2">
-              <Link className="py-4 px-4" href="link" to="/Home">
+              <Link className="py-4 px-4" href="link" to="/">
                 Home
               </Link>
               <Link className="py-4 px-4" href="link" to="/About">
@@ -27,17 +27,14 @@ const Navbar = () => {
               <Link className="py-4 px-4" href="link" to="/Contact">
                 Contact
               </Link>
+              <Link>
+                <button className="button-primary">Resume</button>
+              </Link>
             </ul>
           </nav>
         </header>
 
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          {/* <Route exact path="/Home">
-            <Home />
-          </Route> */}
           <Route exact path="/About">
             <About />
           </Route>
@@ -46,6 +43,9 @@ const Navbar = () => {
           </Route>
           <Route exact path="/Contact">
             <Contact />
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
         </Switch>
       </div>
