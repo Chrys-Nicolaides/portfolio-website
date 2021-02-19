@@ -19,21 +19,27 @@ const Projects = () => {
           </h1>
         </div>
         <hr className="border-1 border-bottom border-gray-600 w-full mt-8 mb-10"></hr>
-        <div className="project-container-right pt-32 grid grid-cols-2">
-          <Link className="project-image relative grid grid-cols-2">
+        <div className="project-container-right pt-32 grid grid-cols-2 gap-x-8">
+          <Link className="relative grid grid-cols-2 hover-wrapper">
+            <div className="grid-span-2 grid-start -mr-32">
             <img
-              className="image grid-span-2 grid-start-1"
+              className="image"
               src={DesignSystemsLight}
               alt="DesignSystemsLight"
-            />
+              />
+              </div>
+              <div className="grid-span-2 grid-start-2 z-1 -ml-32 mt-36">
             <img
-              className="image grid-span-2 grid-start-2 z-1 -ml-32 mt-36"
+              className="image"
               src={DesignSystemsDark}
               alt="DesignSystemsDark"
-            />
-            <Link className="project-link m-auto my-auto opacity-0 text-gray-400 focus:text-gray-100 focus:ring-1 focus:ring-gray-100 bg-gray-800 rounded px-6 py-2.5 border-gray-400 focus:border-gray-100 border-2 shadow">
-              view project
-            </Link>
+              />
+              </div>
+            <div className="absolute inset-0 flex justify-center items-center button-wrapper">
+              <Link className="button-secondary">
+                view project
+              </Link>
+            </div>
           </Link>
           <div className="project-info text-right">
             <h2 className="text-red-300 text-5xl font-bold">Design Systems</h2>
@@ -70,7 +76,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="project-container-left pt-60 grid grid-cols-2">
+        <div className="project-container-left pb-32 pt-60 grid grid-cols-2">
           <div className="project-info text-left">
             <h2 className="text-red-300 text-5xl font-bold">Ergo Timer</h2>
             <h3 className="text-gray-300 text-3xl font-bold mt-2">
@@ -105,15 +111,19 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <Link className="project-image relative">
+          <Link className="hover-wrapper relative">
+            <div>
             <img
-              className="image aspect-h-auto"
+              className="image"
               src={ErgoTimer}
               alt="ErgoTimer"
-            />
-            <Link className="project-link m-auto my-auto opacity-0 text-gray-400 focus:text-gray-100 focus:ring-1 focus:ring-gray-100 bg-gray-800 rounded px-6 py-2.5 border-gray-400 focus:border-gray-100 border-2 shadow">
+              />
+              </div>
+            <div className="absolute inset-0 flex justify-center items-center button-wrapper">
+            <Link className="button-secondary">
               view project
             </Link>
+          </div>
           </Link>
         </div>
       </section>

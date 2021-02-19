@@ -1,10 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
   .button-primary {
     @apply bg-transparent rounded-md px-6 py-2.5 text-red-300 border-red-300 border-2 shadow focus:outline-none hover:bg-red-200 hover:bg-opacity-25 focus:ring-1 focus:ring-red-300;
+  }
+  .button-secondary {
+    @apply text-gray-400 focus:text-gray-100 focus:ring-1 focus:ring-gray-100 bg-gray-800 rounded px-6 py-2.5 border-gray-400 focus:border-gray-100 border-2 shadow;
   }
   .link-primary {
     @apply py-4 px-4 hover:text-gray-100 focus:text-red-300;
