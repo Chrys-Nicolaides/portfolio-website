@@ -25,15 +25,23 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset -2px -2px 2px hsla(240, 5%, 26%, 0.6);
 }
 
-.project-image:hover .project-link {
+.project-image:hover > .project-link {
   opacity: 1;
 }
 
 .project-image > .project-link {
-  /* top: 50%; */
   margin-left: 50%;
   margin-top: -75%;
   z-index: 2;
-  flex-wrap: nowrap;
-  color: white;
+}
+
+.project-image:hover {
+  opacity: 0.4;
+}
+
+.project-link:hover {
+  opacity: 1;
+}
+.project-link:focus {
+  opacity: 1;
 }
