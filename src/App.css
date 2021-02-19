@@ -25,23 +25,14 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset -2px -2px 2px hsla(240, 5%, 26%, 0.6);
 }
 
-.project-image:hover > .project-link {
-  opacity: 1;
+.hover-wrapper:hover > div > .image {
+  filter: brightness(0.9) contrast(0.8) blur(0.8px);
 }
 
-.project-image > .project-link {
-  margin-left: 50%;
-  margin-top: -75%;
-  z-index: 2;
+.hover-wrapper:hover > .button-wrapper {
+  opacity: 100%;
 }
 
-.project-image:hover {
-  opacity: 0.4;
-}
-
-.project-link:hover {
-  opacity: 1;
-}
-.project-link:focus {
-  opacity: 1;
+.hover-wrapper > .button-wrapper {
+  opacity: 0%;
 }
