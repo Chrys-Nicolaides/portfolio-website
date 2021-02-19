@@ -26,7 +26,7 @@ const Home = () => {
           quis porttitor quam porttitor et.
         </p>
         <button className="button-primary">Say Hello</button>
-        <DownArrow className="mt-6 h-10 text-gray-600" />
+        <DownArrow className="-ml-1 mt-6 h-10 text-gray-600" />
       </section>
       <div>
         <About />
