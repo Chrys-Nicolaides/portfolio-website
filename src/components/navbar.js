@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ReactComponent as CoralLogo } from "../images/coral-logo.svg";
 
 import Home from "./Home";
 import Projects from "./Projects";
@@ -12,23 +13,27 @@ const Navbar = () => {
     <Router>
       <div>
         <header>
-          <nav className="w-full flex row justify-between items-center bg-gray-800 text-gray-300 shadow-xl">
-            <h2 className="px-4">My Logo</h2>
+          <nav className="w-full flex row justify-between items-center bg-gray-800 text-gray-300 shadow-lg py-2">
+            <div className="px-8">
+              <CoralLogo />
+            </div>
             <ul className="flex row justify-end p-2">
-              <Link className="py-4 px-4" href="link" to="/">
+              <Link className="link-primary" href="link" to="/">
                 Home
               </Link>
-              <Link className="py-4 px-4" href="link" to="/About">
+              <Link className="link-primary" href="link" to="/About">
                 About
               </Link>
-              <Link className="py-4 px-4" href="link" to="/Projects">
+              <Link className="link-primary" href="link" to="/Projects">
                 Projects
               </Link>
-              <Link className="py-4 px-4" href="link" to="/Contact">
+              <Link className="link-primary" href="link" to="/Contact">
                 Contact
               </Link>
-              <Link>
-                <button className="button-primary">Resume</button>
+              <Link className=" flex row items-center">
+                <button className="button-primary mx-6 px-4 py-2">
+                  Resume
+                </button>
               </Link>
             </ul>
           </nav>
