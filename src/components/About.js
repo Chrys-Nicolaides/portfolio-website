@@ -19,17 +19,17 @@ const About = () => {
               I am a multi-disciplinary designer with a background in
               Architecture. I graduated with my Master’s Degree in Architecture
               in 2016 and have gained 6 years of experience working in the
-              field.{" "}
-              <p className="pt-4">
-                Today, I am eager to transition into web development and focus
-                not only web design but also building impactful and meaningful
-                digital experiences for users. I have a passion for problem
-                solving and turning complex problems into intuitive and
-                straightforward solutions. While I have experience in design, I
-                am a pragmatist and appreciate that UX/UI design and development
-                are reliant on each other. I strive to grow in both areas in
-                hopes of becoming a well rounded front end developer.
-              </p>
+              field.
+            </p>
+            <p className="pt-4">
+              Today, I am eager to transition into web development and focus not
+              only web design but also building impactful and meaningful digital
+              experiences for users. I have a passion for problem solving and
+              turning complex problems into intuitive and straightforward
+              solutions. While I have experience in design, I am a pragmatist
+              and appreciate that UX/UI design and development are reliant on
+              each other. I strive to grow in both areas in hopes of becoming a
+              well rounded front end developer.
             </p>
             <p className="pt-10 text-gray-300">
               These are the technologies I have been working with recently:
