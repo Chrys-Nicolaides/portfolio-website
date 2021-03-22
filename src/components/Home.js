@@ -1,9 +1,8 @@
 import React from "react";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import Footer from "./Footer";
+// import About from "./About";
+// import Projects from "./Projects";
+// import Contact from "./Contact";
+// import Footer from "./Footer";
 
 import { ReactComponent as DownArrow } from "../images/DownArrow.svg";
 
@@ -18,7 +17,7 @@ const Home = () => {
         <h2 className="text-8xl text-red-300 font-sans font-bold">
           I do things hey.
         </h2>
-        <p className="pt-8 pb-10 w-5/6 w-9/12 text-justify">
+        <p className="pt-8 pb-10 w-5/6  text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           quis condimentum ex, ut sodales libero. Nam tortor nisl, commodo
           vestibulum malesuada tincidunt, tempor vel mi. Vivamus non mi rhoncus,
@@ -28,14 +27,6 @@ const Home = () => {
         <button className="button-primary">Say Hello</button>
         <DownArrow className="-ml-1 mt-6 h-10 text-gray-600" />
       </section>
-      <div>
-        <About />
-        <Projects />
-        <Contact />
-      </div>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };

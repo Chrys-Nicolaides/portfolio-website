@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaGithub, FaCodepen, FaLinkedinIn, FaDribbble } from "react-icons/fa";
 
 const Footer = () => {
@@ -32,13 +31,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex">
-          <Link
+          <a
             className="link-primary flex row justify-end text-xs font-normal tracking-wider"
-            href="#"
+            href="https://www.google.com"
             to="/"
           >
             nicolaides.chrysanthe@gmail.com
-          </Link>
+          </a>
         </div>
       </div>
     </div>

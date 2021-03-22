@@ -1,5 +1,4 @@
 import React from "react";
-// import { BrowserRouter as Link } from "react-router-dom";
 
 import ProjectOne from "../projects/ProjectOne";
 import ProjectTwo from "../projects/ProjectTwo";
